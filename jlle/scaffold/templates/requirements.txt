@@ -1,0 +1,11 @@
+ipython
+ipdb
+pep8
+Sphinx
+sphinxcontrib-napoleon
+tox
+nose
+coverage
+doc2git
+termite
+-e .

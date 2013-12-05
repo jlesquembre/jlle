@@ -1,0 +1,13 @@
+- command:
+    name: docs
+    tasks:
+
+        - shell:
+            command: make html
+            cwd: docs
+            watch:
+                - docs/Makefile
+                - docs/source
+
+        - server:
+            path: docs/_build/html
