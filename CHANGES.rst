@@ -1,10 +1,10 @@
 Changelog for jlle
-===================
+==================
 
 0.1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Ignore Python bytecode files when a new project is created.
 
 
 0.1.0 (2013-12-05)
