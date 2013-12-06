@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 TODAY = datetime.datetime.today().strftime('%Y-%m-%d')
 HISTORY_HEADER = '%(new_version)s (%(today)s)'
-PRERELEASE_COMMIT_MSG = 'Preparing release %(new_version)s'
+PRERELEASE_COMMIT_MSG = 'Release %(new_version)s'
 
 NOTHING_CHANGED_YET = '- Nothing changed yet.'
 COMMIT_MSG = 'Back to development: %(new_version)s'

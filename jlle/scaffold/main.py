@@ -49,6 +49,21 @@ def replace(path, variables):
 
     return path
 
+def should_skip_file(name):
+    """
+    Checks if a file should be skipped based on its name.
+
+    If it should be skipped, returns the reason, otherwise returns
+    None.
+    """
+    if name.endswith(('~', '.bak')):
+        return 'Skipping backup file %(filename)s'
+    if name.endswith(('.pyc', '.pyo')):
+        return 'Skipping %s file ' % os.path.splitext(name)[1] + '%(filename)s'
+    if name.endswith('$py.class'):
+        return 'Skipping $py.class file %(filename)s'
+    return None
+
 
 def main():
 
@@ -96,8 +111,15 @@ def main():
     templates_dir = os.path.join(here, 'templates')
     env = Environment(loader=FileSystemLoader(templates_dir),
                       keep_trailing_newline=True)
+
     for path, subdirs, files in os.walk(templates_dir):
+        if '__pycache__' in subdirs:
+            subdirs.remove('__pycache__')
+
         for name in files:
+            if should_skip_file(name):
+                continue
+
             in_path = os.path.relpath(os.path.join(path, name), templates_dir)
             logging.info('Render {}'.format(in_path))
             out_path = os.path.join(project_dir, replace(in_path, variables))
