@@ -4,7 +4,7 @@ Changelog for jlle
 0.1.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Bugfix in documentation template.
 
 
 0.1.1 (2013-12-06)
