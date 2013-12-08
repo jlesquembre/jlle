@@ -5,7 +5,7 @@ import os
 #with open(os.path.join(here, 'README.rst'), 'rt') as f:
 #    README = f.read()
 
-version = '0.1.2.dev0'
+version = '0.1.2'
 
 setup(name='jlle',
       version=version,

@@ -1,7 +1,7 @@
 Changelog for jlle
 ==================
 
-0.1.2 (unreleased)
+0.1.2 (2013-12-08)
 ------------------
 
 - Bugfix in documentation template.
