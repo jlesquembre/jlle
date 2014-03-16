@@ -2,6 +2,7 @@ ipython
 ipdb
 pep8
 Sphinx
+sphinx_rtd_theme
 sphinxcontrib-napoleon
 tox
 nose

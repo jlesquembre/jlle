@@ -4,7 +4,7 @@ Changelog for jlle
 0.1.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Default docs theme is now the read the docs theme.
 
 
 0.1.2 (2013-12-08)
