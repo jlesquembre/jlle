@@ -1,7 +1,7 @@
 Changelog for jlle
 ==================
 
-0.1.4 (unreleased)
+0.1.4 (2014-04-26)
 ------------------
 
 - Use py.test instead of nose.
