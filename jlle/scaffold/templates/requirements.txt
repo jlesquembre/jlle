@@ -5,8 +5,8 @@ Sphinx
 sphinx_rtd_theme
 sphinxcontrib-napoleon
 tox
-nose
-coverage
+pytest
+pytest-cov
 doc2git
 termite
 -e .
