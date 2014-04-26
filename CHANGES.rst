@@ -1,6 +1,12 @@
 Changelog for jlle
 ==================
 
+0.1.5 (unreleased)
+------------------
+
+- Nothing changed yet.
+
+
 0.1.4 (2014-04-26)
 ------------------
 
